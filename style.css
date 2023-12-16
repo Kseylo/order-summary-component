@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin-block-end: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+textarea:not([rows]) {
+    min-height: 10em;
+}
+
+:target {
+    scroll-margin-block: 5ex;
+}
+
+:root {
+    /* PRIMARY COLORS*/
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /* NEUTRAL COLORS */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pale-blue);
+}
+
+.container {
+    background-color: white;
+    max-width: 20rem;
+    border-radius: 1rem;
+}
+
+.hero-img {
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+}
+
+.paragraph {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--desaturated-blue);
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--very-pale-blue);
+    border-radius: 0.75rem;
+    padding: 1rem;
+}
+
+.plan-heading {
+    font-size: 1rem;
+    color: var(--dark-blue);
+    margin-top: 0;
+}
+
+.plan-price {
+    color: var(--desaturated-blue);
+    margin-top: 0.25rem;
+}
+
+.plan-btn {
+}
+
+.proceed-btn {
+    background-color: var(--bright-blue);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+}
+
+.proceed-btn:hover {
+    cursor: pointer;
+}
+
+.cancel-btn {
+    border: none;
+    background-color: white;
+    padding: 0.75rem;
+    font-weight: bold;
+    color: var(--desaturated-blue);
+}
+
+.cancel-btn:hover {
+    cursor: pointer;
+}
